@@ -17,7 +17,7 @@ require(sp)
 require(rpart)
 
 # Read data
-subsam<-readRDS("~/LUCIDA/data/data_gbif_luc.rds")
+subsam<-readRDS("data/data_gbif_luc.rds")
 
 # FUNCION f1 PARA EXTRAER VALORES (val) DEL RASTER DE USO DE SUELO (path, band) DENTRO DEL AREA DE DISTRIBUCIÓN DE LA IUCN (X)
 f1<-function(X, x, path, val, band, varX) {
