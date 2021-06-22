@@ -4,19 +4,19 @@
 # READ DATA (output of XXXXX.R)
 
 # HAZARD ON THE SUSTAINABLE PATH IN THRE YEARS: 2025,2050,AND 2100
-cell.sum.SSP1.2025 = read.csv("~/LUCIDA/output/cell_analysis/cell_sum_N10_2025.csv") # SSP1: Sustainable development 2025
-cell.sum.SSP1.2050 = read.csv("~/LUCIDA/output/cell_analysis/cell_sum_N10_2050.csv") # SSP1: Sustainable development 2050
-cell.sum.SSP1.2100 = read.csv("~/LUCIDA/output/cell_analysis/cell_sum_N10_2100.csv") # SSP1: Sustainable development 2100
+cell.sum.SSP1.2025 = read.csv("cell_sum_N10_2025.csv") # SSP1: Sustainable development 2025
+cell.sum.SSP1.2050 = read.csv("cell_sum_N10_2050.csv") # SSP1: Sustainable development 2050
+cell.sum.SSP1.2100 = read.csv("cell_sum_N10_2100.csv") # SSP1: Sustainable development 2100
 
 # HAZARD ON THE SHARED SOCIOECONOMIC PATHWAYS, FOR THRE YEAR 2050
-cell.sum.SSP3.2050 = read.csv("~/LUCIDA/output/cell_analysis/cell_sum_N10_SSP3_2050.csv") # SSP3: Region rivalry
-cell.sum.SSP4.2050 = read.csv("~/LUCIDA/output/cell_analysis/cell_sum_N10_SSP4_2050.csv") # SSP4: Inequality
-cell.sum.SSP5.2050 = read.csv("~/LUCIDA/output/cell_analysis/cell_sum_N10_worst_2050.csv") # SSP5: fossil-fuelled development
+cell.sum.SSP3.2050 = read.csv("cell_sum_N10_SSP3_2050.csv") # SSP3: Region rivalry
+cell.sum.SSP4.2050 = read.csv("cell_sum_N10_SSP4_2050.csv") # SSP4: Inequality
+cell.sum.SSP5.2050 = read.csv("cell_sum_N10_worst_2050.csv") # SSP5: fossil-fuelled development
 
 # HAZARD ON THE SHARED SOCIOECONOMIC PATHWAYS, FOR THRE YEAR 2100
-cell.sum.SSP3.2100 = read.csv("~/LUCIDA/output/cell_analysis/cell_sum_N10_SSP3_2100.csv") # SSP3: Region rivalry
-cell.sum.SSP4.2100 = read.csv("~/LUCIDA/output/cell_analysis/cell_sum_N10_SSP4_2100.csv") # SSP4: Inequality
-cell.sum.SSP5.2100 = read.csv("~/LUCIDA/output/cell_analysis/cell_sum_N10_SSP5_2100.csv") # SSP5: fossil-fuelled development
+cell.sum.SSP3.2100 = read.csv("cell_sum_N10_SSP3_2100.csv") # SSP3: Region rivalry
+cell.sum.SSP4.2100 = read.csv("cell_sum_N10_SSP4_2100.csv") # SSP4: Inequality
+cell.sum.SSP5.2100 = read.csv("cell_sum_N10_SSP5_2100.csv") # SSP5: fossil-fuelled development
 
 # DATA ON RODENT RICHNES AT EACH GEOGRAPHIC CELL
 richness = cell.sum.SSP4.2050$reservoir.richness
