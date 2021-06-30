@@ -13,8 +13,6 @@ library(rgbif)
 
   download.file("https://api.gbif.org/v1/occurrence/download/request/0159561-200613084148143.zip", "data/0056924-200613084148143.zip")
   dat = occ_download_get(k, overwrite = T)
-  
-  
   sam = occ_download_import(dat) # import data from GBIF
 
 # Save a backup copy of the gbif file as k.rds
@@ -22,10 +20,11 @@ library(rgbif)
 
 # Read data, k = "0056924-200613084148143" #
   sam<-readRDS(paste("~/LUCIDA/data/", k, ".rds", sep=""))
-  subsam<-sam[is.na(sam$decimalLatitude)==F,] # NOTA: EN NOMBRE DE LAS COORDENADAS A VECES ESTÁN EN MINÚSCULA: decimallatitude
+  subsam<-sam[is.na(sam$decimalLatitude)==F,] # Note that the name of the variable (latitude) can change to "decimallatitude"
 
 # Clean de data
 library(CoordinateCleaner)
+
   Q = clean_coordinates(subsam
                      , lat="decimalLatitude"
                      , lon = "decimalLongitude"
@@ -52,16 +51,12 @@ library(CoordinateCleaner)
 # Make the index of unique space/year cells
   D$id<-paste(D$decimalLatitude, D$decimalLongitude, D$year)
   id<-unique(D$id)
-
   lat<-D$decimalLatitude[match(unique(D$id), D$id)]
   lon<-D$decimalLongitude[match(unique(D$id), D$id)]
   year<-D$year[match(unique(D$id), D$id)]
-
-  subsam1<-data.frame(id, lat, lon, year)
-
+  subsam1<-data.frame(id, lat, lon, year) # subsample of unique cells with records.
 
 # Land use change data (file states.nc).
- 
 # Make a vector with the numbers of band corresponding to the sample year.
 
   band<-subsam1$year-850 # Note: the time series starts at the year 850
