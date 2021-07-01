@@ -224,9 +224,4 @@ X = rodents_native
 nms= c("Aconaemys porteri", "Microsciurus alfari", "Spermophilus dauricus", "Oligoryzomys fornesi")
 
 
-f.predict(nms[1]) # The prediction is generated and published in a map, saved in the working directory
-
-
-
-Gabriel E. García-Peña, André V. Rubio, Hugo Mendoza, Miguel Fernández, Matthew T. Milholland, A. Alonso Aguirre, Gerardo Suzán, Carlos Zambrana-Torrelio. 2021. Land-use change and rodent-borne diseases: Hazards on the shared socioeconomic pathways. Phil. Trans. R. Soc. B. doi:10.1098/not yet assigned
-
+f.predict(nms[1]) # The prediction is generated and published in a map (geojson), saved in the working directory with the name of the species
