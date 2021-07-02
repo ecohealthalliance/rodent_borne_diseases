@@ -18,7 +18,7 @@ Developer: Gabriel E. García-Peña
 ## 2_map_CART.R 
     Read historical data copiled into de file: data_gbif_luc.rds # SEE FILE: 1_clean_compile_data.R
     Perform (RPART aka CART) Recursive partitioning / Classification tree analysis (CART), and predict presence in future land-use scenarios.
-     Publish resuts for each species as vectors in a map (geojson)
+    Publish resuts for each species as vectors in a map (geojson)
 
 ## 3_zoonotic_hazard_by_cell.R
     Compile all the predictions from geojson files generated with 2_map_CART.R
