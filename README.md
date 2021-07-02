@@ -49,6 +49,12 @@ raster_FTPS = Contains rasters with zoonotic hazards in the different scenarios.
       SSP4_2050_SSP1_2050 =  SSP4_2050 - SSP1_2050
       SSP5_2050_SSP1_2050 =  SSP5_2050 - SSP1_2050
 
+   ## Files
+   ### equilibrium_prevalence_definition.pdf
+   Equation of equilibrium prevalence suggested by Han et al. 2020
+   
+   ### Cart_model_accuracy.csv 
+   Accuracy of the models generated for each species in the study
 
 
 
